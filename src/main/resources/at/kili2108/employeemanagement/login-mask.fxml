@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox minHeight="130.0" prefHeight="130.0" prefWidth="380.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.kili2108.employeemanagement.LoginController">
+   <Label alignment="CENTER" prefHeight="17.0" prefWidth="64.0" text="Username" textAlignment="CENTER" />
+   <TextField fx:id="userNameTextfield" />
+   <Label alignment="CENTER" prefHeight="17.0" prefWidth="67.0" text="Password" />
+   <PasswordField fx:id="pwTextField" />
+   <Button fx:id="loginButton" alignment="CENTER" mnemonicParsing="false" onMouseClicked="#login" text="Login" />
+</VBox>

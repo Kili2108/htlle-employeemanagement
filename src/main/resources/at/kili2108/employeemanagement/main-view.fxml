@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox minHeight="300.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.14-internal"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.kili2108.employeemanagement.MainController">
+    <MenuBar>
+        <Menu text="Account">
+            <MenuItem text="Logout" onAction="#logout"/>
+            <SeparatorMenuItem/>
+            <MenuItem text="Exit" onAction="#exit"/>
+        </Menu>
+        <Menu text="Edit">
+            <MenuItem text="Add Employee" onAction="#addEmployee"/>
+            <MenuItem text="Edit Employee" onAction="#editEmployee"/>
+            <MenuItem text="Delete Employee" onAction="#deleteEmployee"/>
+        </Menu>
+        <Menu text="Other">
+            <MenuItem text="Create Dummy Data" onAction="#createDummyData"/>
+            <MenuItem text="Empty All Tables" onAction="#resetAll"/>
+            <MenuItem text="Get Admin Accounts" onAction="#getAdminAccounts"/>
+        </Menu>
+    </MenuBar>
+    <TableView fx:id="employeeTableView" layoutX="14.0" layoutY="14.0" prefHeight="300.0" prefWidth="500.0">
+        <columns>
+            <TableColumn fx:id="nameColumn" prefWidth="100.0" text="Name"/>
+            <TableColumn fx:id="surnameColumn" prefWidth="100.0" text="Surname"/>
+            <TableColumn fx:id="birthdateColumn" prefWidth="100.0" text="Birthdate"/>
+            <TableColumn fx:id="emailColumn" prefWidth="150.0" text="Email"/>
+            <TableColumn fx:id="workplaceColumn" prefWidth="100.0" text="Workplace"/>
+        </columns>
+    </TableView>
+</VBox>
